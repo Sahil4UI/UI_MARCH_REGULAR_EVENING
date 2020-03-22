@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .left {
+            float: left;
+            width: 50%;
+            height: 200px;
+            background-color: RED;
+        }
+        
+        .right {
+            float: right;
+            width: 50%;
+            height: 200px;
+            background-color: aqua;
+        }
+        
+        .clear:after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent" class="clear">
+        <div class="child left">CHILD 1 DIV</div>
+        <div class="child right">CHILD 2 DIV</div>
+    </div>
+</body>
+
+</html>
