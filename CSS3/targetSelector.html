@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form {
+            display: none;
+            margin-top: 50px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #000;
+            font-weight: 600;
+            padding: 12px 18px;
+            border-radius: 4px;
+        }
+        
+        #form:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#form">
+CLICK HERE TO OPEN FORM
+    </a>
+    <form id="form">
+        <table>
+            <tr>
+                <td>NAME</td>
+                <td><input type="text" name="NAME" id="" required placeholder="ENter NAMe"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="PASSWORD" id=""></td>
+            </tr>
+            <tr>
+                <td>MAIL</td>
+                <td><input type="email" name="MAIL" id=""></td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td><input type="radio" name="gen" id="">MALE
+                    <input type="radio" name="gen" id="">FEMALE
+                </td>
+            </tr>
+            <tr>
+                <td>HOBBIES</td>
+                <td>
+                    <input type="checkbox" name="" id="">DANCING
+                    <input type="checkbox" name="" id="">Swimming
+
+                    <input type="checkbox" name="" id="">Playing
+
+                    <input type="checkbox" name="" id="">Cooking
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td>
+                    <select name="" id="">
+
+                        <option value="">Choose any one</option>
+                      <optgroup label="INDIA">
+                        <option value="DL">Delhi</option>
+                        <option value="CH">Chandigarh</option>
+                        <option value="PU">Punjab</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="HR">Haryana</option>
+                      </optgroup>
+                      <optgroup label="america">
+                          <option value="NY">New York</option>
+                          <option value="">New JERSEY</option>
+                          <option value=""></option>
+                          <option value=""></option>
+                          <option value=""></option>
+                      </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="reset">CLEAR</button>
+                </td>
+                <td>
+                    <button type="submit">SIGNUP</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

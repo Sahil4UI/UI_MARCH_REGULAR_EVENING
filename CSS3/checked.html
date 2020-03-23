@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* checked Selector */
+        
+        #display {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            margin: 200px auto 0 auto;
+            /* position: relative; */
+        }
+        
+        input[type="checkbox"] {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 200px;
+            left: 43%;
+        }
+        
+        input[type="checkbox"]:checked~#display {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="checkbox">
+    <div id="display">
+
+    </div>
+
+</body>
+
+</html>
