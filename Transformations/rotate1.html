@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #door {
+            border: 10px double #000;
+            height: 500px;
+            width: 250px;
+            margin: 100px auto 0px auto;
+            transform-style: preserve-3d;
+            perspective: 900px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            transition: 3s;
+            /* transform-origin: right; */
+            /* transform-origin: left; */
+            /* transform-origin: top; */
+            transform-origin: bottom;
+        }
+        
+        #door:hover img {
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="door">
+        <img src="https://3.imimg.com/data3/PN/HB/GLADMIN-13236805/dd-infosoft-22-500x500.png" alt="">
+    </div>
+</body>
+
+</html>
