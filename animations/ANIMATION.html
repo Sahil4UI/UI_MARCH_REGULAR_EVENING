@@ -1,0 +1,62 @@
+!!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #board {
+            border: 4px double red;
+            width: 100%;
+            height: 100vh;
+        }
+        /*         
+        #board:hover img {
+            animation-play-state: paused;
+        } */
+        
+        img {
+            height: 200px;
+            width: 200px;
+            /* animation: duration name timingfunction count; */
+            animation: 20s jerryMove linear infinite;
+        }
+        /* @keyframes animationname {} */
+        
+        @keyframes jerryMove {
+            /* starting point */
+            /* from {
+                transform: translate(0, 0);
+            } */
+            /* destination point */
+            /* to {
+                transform: translate(1100px, 0);
+            } */
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(1100px, 0);
+            }
+            50% {
+                transform: translate(1100px, 700px);
+            }
+            75% {
+                transform: translate(0px, 700px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="board">
+        <!-- <img src="https://lh3.googleusercontent.com/proxy/LA5Em773UggZW7c7pGk1ltylfSEJ1WTSfhQ6frE7N_KCferEkLzlfPLI11r6MtfnFYEIFfwHo7raJ226L_wHHBnrXDAsNIofKLqcCHoF03-TZdVL8npjYMNC1dspmbWBBpD2oS_T" alt=""> -->
+        <img src="https://a.espncdn.com/combiner/i?img=/redesign/assets/img/icons/ESPN-icon-soccer.png&w=288&h=288&transparent=true" alt="">
+    </div>
+</body>
+
+</html>
