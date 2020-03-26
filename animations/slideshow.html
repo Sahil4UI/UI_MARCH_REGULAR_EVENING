@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #slideshow {
+            height: 800px;
+            width: 100%;
+            animation: 20s linear infinite slideshow;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-image: url("https://cdn.motor1.com/images/mgl/8LQ6M/s1/lamborghini-aventador-svj-63-roadster.jpg");
+        }
+        
+        @keyframes slideshow {
+            0%,
+            15% {
+                background-image: url("https://cdn.motor1.com/images/mgl/8LQ6M/s1/lamborghini-aventador-svj-63-roadster.jpg");
+            }
+            25%,
+            40% {
+                background-image: url("https://pictures.topspeed.com/IMG/crop/201711/after-the-mighty-nin_1600x0w.jpg");
+            }
+            50%,
+            65% {
+                background-image: url("https://lh5.googleusercontent.com/proxy/IAgcDDlKhQZ5845RnPjd4q8eNgJ0OoXjZlYZkHcwQoXbjJ_cpdzhyP0uxHiji109RaGG1aH5Nbcr-orotmAALICf5eP2E_Xp5oIkxw=s0-d");
+            }
+            75%,
+            90% {
+                background-image: url("https://stat.overdrive.in/wp-content/odgallery/2019/12/54854_2020_triumph_rocket-3-R_1.jpg");
+            }
+            90%,
+            100% {
+                background-image: url("https://cdn.motor1.com/images/mgl/8LQ6M/s1/lamborghini-aventador-svj-63-roadster.jpg");
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slideshow">
+
+    </div>
+</body>
+
+</html>

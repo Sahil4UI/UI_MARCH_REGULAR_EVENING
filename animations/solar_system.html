@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(https://www.pixelstalk.net/wp-content/uploads/2016/11/Earth-From-Space-Wallpapers-HD-Desktop.jpg);
+            /* background-size: 100%; */
+            background-repeat: no-repeat;
+            transform-style: preserve-3d;
+            perspective: 800px;
+        }
+        
+        .sun {
+            width: 400px;
+            height: 400px;
+            margin: 200px auto 0px 520px;
+            display: inline-block;
+        }
+        
+        .sun img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .sun :hover {
+            filter: brightness(500%);
+        }
+        
+        .rotate {
+            position: absolute;
+            top: 295px;
+            left: 225px;
+            animation: 10s emove linear infinite;
+        }
+        
+        @keyframes emove {
+            0% {
+                transform: translate(0, 0) scale(1, 1);
+                z-index: 1000;
+            }
+            25% {
+                transform: translate(375px, 0) scale(1.2, 1.2);
+                z-index: 1000;
+            }
+            50% {
+                transform: translate(800px, 0) scale(1, 1);
+                z-index: 1000;
+            }
+            51% {
+                transform: translate(800px, 0) scale(1, 1);
+                z-index: -1000;
+            }
+            75% {
+                z-index: -1000;
+                transform: translate(375px, 0) scale(0.8, 0.8);
+            }
+            100% {
+                transform: translate(0, 0) scale(1, 1);
+                z-index: -1000;
+            }
+            */
+        }
+        
+        .earth {
+            width: 250px;
+            height: 225px;
+            transform-style: preserve-3d;
+            perspective: 800px;
+        }
+        
+        .earth img {
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sun">
+        <img src="https://www.planetsforkids.org/wp-content/uploads/2019/06/the-sun.png" alt="">
+    </div>
+    <div class="rotate">
+        <div class="earth">
+            <img src="https://thumbs.gfycat.com/AliveJitteryAmethystsunbird-max-1mb.gif" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
