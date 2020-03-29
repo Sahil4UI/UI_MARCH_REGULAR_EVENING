@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/202cc93de6.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: #000;
+            display: flex;
+            padding-left: 40px;
+            padding-right: 40px;
+            width: 100%;
+            position: relative;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 8%;
+        }
+        .logo img{
+            height: 39px;
+            padding: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul li a{
+            color:#fff;
+        }
+        nav{
+            width:30%;
+            margin-left: 0;
+        }
+        .search{
+            width: 15%;
+            padding-left: 50px;
+            padding: 18px 0 18px 350px;
+        }
+        .cart {
+            width: 6%;
+            padding-top: 10px;
+            height: 40px;
+        }
+        .cart a {
+            font-size: 30px;
+            color: #fff;
+             }
+        .user{
+            width: 6%;
+            padding-top: 12px;
+            height: 40px;
+
+        }
+        .user a{
+            font-size: 30px;
+            color: #fff;
+        }
+        input[type="checkbox"],
+        .hamburger{
+            height:50px;
+            width:60px;
+            display: none;
+            position: absolute;
+            right:20px;
+        }
+        .hamburger{
+            padding:5px;
+            background-color: #000;
+            border:2px solid #fff;
+        }
+        .hamburger span{
+            display: block;
+            background-color: #fff;
+            height:4px;
+            width:100%;
+            margin:13px 0;
+
+        }
+        @media (max-width:768px)
+        {
+            nav{
+                display: none;
+                position: absolute;
+                width:100%;
+                left:0;
+                background-color: cadetblue;
+                top:100%;              
+
+
+            }
+            .search{
+                display: none;  
+            }
+            .cart{
+                /* margin-left: 500px; */
+                /* position: absolute; */
+            }
+            .user{
+                /* margin-left: 40px; */
+                /* position: absolute; */
+            }
+            input[type="checkbox"],
+        .hamburger{
+            display: block;
+        }
+
+        input[type="checkbox"]{
+            opacity: 0;
+            z-index:10000;
+        }
+        input[type="checkbox"]:checked ~ nav{
+            display: block;
+             justify-content: space-between;
+         
+        }
+        input[type="checkbox"]:checked ~ nav ul{
+            padding: 10px;
+        }
+        header{
+            justify-content: space-around;
+        }
+        .hamburger span{
+            transition: 2s;
+
+        }
+        input[type="checkbox"]:checked ~ .hamburger span:first-child{
+            transform: rotateZ(45deg);
+            margin-top:24px;
+        }
+        input[type="checkbox"]:checked ~ .hamburger span:nth-child(2){
+            transform: translateX(150px);
+        }
+        input[type="checkbox"]:checked ~ .hamburger span:last-child{
+            transform: rotateZ(-45deg);
+            margin-top:-34px;
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            <input type="checkbox" name="" id="">
+            <nav class="main_nav">
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    
+                    <li><a href="#">Women</a></li>
+                    
+                    <li><a href="#">Kids</a></li>
+                    
+                    <li><a href="#">Select</a></li>
+                    
+                    <li><a href="#">Collection</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Search Puma.Com">
+            </div>
+            <div class="cart">
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+
+                </a>
+            </div>
+            <div class="user">
+                <a href="#">
+                    <i class="far fa-user-circle"></i>
+                </a>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    </div>
+</body>
+</html>
