@@ -1,0 +1,87 @@
+/* default settings */
+body{
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+}
+a:hover{
+    text-decoration: none!important;
+}
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6
+{
+    margin-top:0;
+}
+
+/* header */
+#header{
+    background-image: url("https://demo.w3layouts.com/demos_new/template_demo/17-09-2018/online_resume-demo_Free/1471767518/web/images/1.jpg");
+    background-size: 100% 100%;
+    height:90vh;
+}
+#topbar{
+    padding-top:8px;
+}
+#mainNav{
+    width:50%;
+}
+#mainNav ul li a{
+    display: block;
+    padding:12px 20px;
+    background-color: #1EC5CA;
+    color:#fff;
+    border-radius: 20px ;
+    font-size: 18px;
+    box-shadow:5px 5px 20px #000 ;
+    font-weight: 600;
+}
+#mainNav ul li a:hover{
+    text-decoration: none;
+    color:#FF3F4D;
+}
+#mainNav .active a{
+    color:#FF3F4D;
+}
+#header .logo a{
+    font-family: 'Pacifico';
+    color:#fff;
+    font-size: 35px;
+    text-shadow: 4px 4px 5px #000;
+}
+
+#introduction .work-profile{
+    font-weight:400;
+    font-size: 25px;
+}
+#introduction span{
+display: block;
+}   
+#introduction .Name1{
+    font-weight: 800;
+    font-size: 50px;
+    color:#fff;
+    text-shadow: 4px 4px 5px #000;
+
+
+}
+#introduction .Name2{
+    color:#FF3F4D;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 4px 4px 5px #000;
+
+
+}
+#introduction .introCaption
+{
+    color:#fff;
+    margin-top:20px;
+}
