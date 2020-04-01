@@ -85,3 +85,92 @@ display: block;
     color:#fff;
     margin-top:20px;
 }
+#download,.hire{
+    display: inline-block;
+    /* font-weight: 600; */
+    font-size: 18px;
+    border-radius: 25px;
+    margin:40px 10px 0px 0px;
+}
+#download:hover{
+    background-color:#FF3F4D;
+    color:#fff;
+}
+#download{
+    background-color: #fff;
+    color:#000;
+    padding:10px 18px;
+
+}
+.hire{
+    background-color:#FF3F4D;
+    color:#fff;
+    padding:10px 50px;
+    
+}
+.hire:hover{
+    background-color: #000;
+    color:#fff;
+}
+
+/* section- about */
+#aboutSection{
+    padding:100px 0;
+}
+#aboutSection .about{
+    padding:0px 5px 0px 70px;
+}
+#aboutSection .profilePic{
+background-image: url("https://demo.w3layouts.com/demos_new/template_demo/17-09-2018/online_resume-demo_Free/1471767518/web/images/about.jpg");
+/* background-size: 100% 100%; */
+/* height:50vh; */
+background-size: cover;
+}
+#aboutSection .about span{
+    color:#1ccacd;
+    font-weight: 600;
+
+}
+#aboutSection .about h3{
+    font-size: 35px;
+}
+#aboutSection .about p{
+    color:#999;
+    line-height: 1.8;
+    letter-spacing: 3px;
+
+}
+/* Service section` */
+#Services{
+    background-image: url("https://demo.w3layouts.com/demos_new/template_demo/17-09-2018/online_resume-demo_Free/1471767518/web/images/bg.jpg");
+    background-size:cover;
+    padding:100px 0;
+}
+#Services .service-logo a{
+display: inline-block;
+background-color: #fff;
+padding: 30px;
+border-radius: 50%;
+pointer-events: none;
+
+}
+
+#Services .service-logo i{
+    color:#ff3f4d;
+    font-size: 40px;
+} 
+#Services .serviceinfo h3{
+color:#fff;
+/* font-size: 30px; */
+font-weight: 600;
+letter-spacing: 1px;
+}
+#Services .serviceinfo p{
+color:#eee;
+line-height: 2;
+letter-spacing: 2px;
+margin-top:20px;
+}
+#Services .service:hover i{
+    color:#000;
+}
