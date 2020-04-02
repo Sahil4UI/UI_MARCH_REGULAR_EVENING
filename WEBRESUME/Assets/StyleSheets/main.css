@@ -174,3 +174,27 @@ margin-top:20px;
 #Services .service:hover i{
     color:#000;
 }
+
+/* Skills section */
+#Skills p{
+color:#999;
+}
+#Skills{
+    padding:60px 0;
+}
+#Skills .design-top,.dev-top{
+border-left:3px solid #1ccacd;
+padding:5px  20px;
+}
+#Skills .design-bottom .counter{
+    color:#ff3f4d;
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: 2px 2px 6px #999 ;
+}
+#Skills .design-bottom p:not(.counter){
+    color:#000;
+}
+#Skills .dev-bottom{
+    margin-left:100px;
+}
