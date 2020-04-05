@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="box">
+    <h1>HELLO <span class="result"></span> </h1>
+    <button onClick="show()">CLICK HERE</button>
+
+    <script>
+        function show()
+        { 
+            // var textbox = document.getElementById("box");
+            var body = document.querySelector("body");
+            // // console.log(textbox.value);
+            // var heading = document.querySelector(".result");
+
+            // // console.log(heading.innerHTML);
+            // // console.log(heading.innerText);
+
+            // heading.innerText = textbox.value;
+            // // document.getElementsByClassName("class");
+            // // document.getElementsByTagName("h1");
+            h1 = document.createElement("h1");
+            h1.innerText = "HELLO";
+            console.log(h1);
+            img = document.createElement("img");
+            h1.appendChild(img);
+            h1.innerHTML += "hey"; 
+            body.appendChild(h1);
+
+            // innerHTML ->target -> html tags inside parent  tag
+            // innerText -> text inside parent tag
+        }
+    </script>
+     
+</body>
+</html>
