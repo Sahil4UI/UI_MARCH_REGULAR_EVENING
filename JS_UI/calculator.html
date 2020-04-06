@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.addEventListener('load',init);
+        var f_num,s_num;
+        function init()
+        {
+           f_num = document.querySelector("#num1");
+           s_num = document.querySelector("#num2");
+            console.log(f_num,s_num);
+            document.getElementById("add").addEventListener("click",addition);
+            document.getElementById("sub").addEventListener("click",minus);
+            document.getElementById("div").addEventListener("click",divison);
+            document.getElementById("mul").addEventListener("click",multiply);
+        
+
+        }
+       
+        function addition()
+        {
+            result = parseInt(f_num.value) + parseInt(s_num.value);
+            document.getElementById("result").innerText = result;
+        }
+
+        function minus()
+        {
+            result = parseInt(f_num.value) - parseInt(s_num.value);
+            document.getElementById("result").innerText = result;
+        }
+        function divison()
+        {
+            result = parseInt(f_num.value) / parseInt(s_num.value);
+            document.getElementById("result").innerText = result;
+        }
+
+        function multiply()
+        {
+            result = parseInt(f_num.value) * parseInt(s_num.value);
+            document.getElementById("result").innerText = result;
+        }
+
+    </script>
+</head>
+<body>
+    <h1>BASIC CALCULATOR</h1>
+    <table>
+        <tr>
+            <td>
+                <label for="num1">First Number</label>
+            </td>
+            <td>
+                <input type="text" name="fnum" id="num1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="num2">Second Number</label>
+            </td>
+            <td>
+                <input type="text" name="snum" id="num2">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button class="btn" id="add">+</button>
+                <button class="btn" id="sub">-</button>
+                <button class="btn" id="mul">*</button>
+                <button class="btn" id="div">/</button>
+            </td>
+        </tr>
+    </table>
+    <h2>Result is <span id="result"></span></h2>
+</body>
+</html>
