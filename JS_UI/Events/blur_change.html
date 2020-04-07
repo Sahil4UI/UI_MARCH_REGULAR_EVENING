@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>JS EVENTS - BLUR + CHANGE</h1>
+
+    <input type="text" placeholder="Enter Name" id="box" onchange="Show(this)">
+    <!-- <input type="text" placeholder="Enter Name" id="box" onblur="Show(this)"> -->
+   
+    <span id="result"></span>
+
+    <script>
+        // function Show(obj)
+        // {
+        //   span = document.querySelector("#result");
+         
+        //     if (obj.value.length==0 )
+        //    {
+        //         span.innerText = "";
+        //         obj.style.border ="5px solid red";
+        //    }
+        //    else{
+
+        //     span.innerText = obj.value;
+        //     obj.style.border = "5px solid green";
+
+        //    }
+        function Show(ob)
+        {
+            console.log("content changed");
+        }
+        // }
+    </script>
+</body>
+</html>
