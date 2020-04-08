@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>KeyPress Event</h1>
+    <input type="text" id="box1" placeholder="Enter your Name :">
+    <span id="Result"></span>
+    
+    <script>
+        var user = document.querySelector("#box1");
+        // user.addEventListener('keypress',function()
+        user.addEventListener('keyup',function()
+        // user.addEventListener('keydown',function()
+
+        {
+            console.log("function called");
+            span = document.querySelector("#Result");
+            span.innerText = user.value;
+
+        }
+        )
+    </script>
+</body>
+</html>

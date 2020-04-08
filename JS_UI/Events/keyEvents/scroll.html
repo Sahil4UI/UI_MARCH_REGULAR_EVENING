@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        body{
+            margin:0;
+        }
+        h1{
+            margin-top:0;
+        }
+        header{
+            background-color: aquamarine;
+            padding:20px 30px;
+        }
+        section{
+            display: flex;
+        }
+        img{
+            width:50%;
+            max-height: 600px;
+            transition: 2s;
+        }
+        section .img-1{
+            transform: translateX(-120%);
+        }
+        section .img-2{
+            transform: translateX(120%);
+        }
+       
+       .active .img-1,.active .img-2{
+        transform: translateX(0%);
+
+       }
+       
+    </style>
+    <script src="scroll.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>LOGO</h1>
+
+        </header>
+        <div id="content">
+            <section id="section-1">
+                <img class="img-1" src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492194985/articles/2014/10/02/is-tom-and-jerry-really-racist/141002-crocker-tom-jerry-tease_mnvam3" alt="">
+                <img class="img-2"  src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/shaktiman_505_310320050700.jpg?size=1200:675" alt="">
+            </section>
+            <section id="section-2">
+                <img class="img-1" src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492194985/articles/2014/10/02/is-tom-and-jerry-really-racist/141002-crocker-tom-jerry-tease_mnvam3" alt="">
+                <img class="img-2"  src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/shaktiman_505_310320050700.jpg?size=1200:675" alt="">
+            </section>
+            <section id="section-3">
+                <img class="img-1" src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492194985/articles/2014/10/02/is-tom-and-jerry-really-racist/141002-crocker-tom-jerry-tease_mnvam3" alt="">
+                <img class="img-2"  src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/shaktiman_505_310320050700.jpg?size=1200:675" alt="">
+            </section>
+            <section id="section-4">
+                <img class="img-1" src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492194985/articles/2014/10/02/is-tom-and-jerry-really-racist/141002-crocker-tom-jerry-tease_mnvam3" alt="">
+                <img class="img-2"  src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/shaktiman_505_310320050700.jpg?size=1200:675" alt="">
+            </section>
+            <section id="section-5">
+                <img class="img-1" src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492194985/articles/2014/10/02/is-tom-and-jerry-really-racist/141002-crocker-tom-jerry-tease_mnvam3" alt="">
+                <img class="img-2"  src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/shaktiman_505_310320050700.jpg?size=1200:675" alt="">
+            </section>
+            <section id="section-6">
+                <img class="img-1" src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492194985/articles/2014/10/02/is-tom-and-jerry-really-racist/141002-crocker-tom-jerry-tease_mnvam3" alt="">
+                <img class="img-2"  src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/shaktiman_505_310320050700.jpg?size=1200:675" alt="">
+            </section>
+            
+        </div>
+    </div>
+
+</body>
+</html>
