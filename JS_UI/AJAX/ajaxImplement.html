@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>NEED OF AJAX </h1>
+    <button onclick="work()">CLICK TO START</button>
+    <script>
+function work()
+{
+    one();
+    two();
+    three();
+    four();
+    five();
+    six();
+}
+    function one()
+    {
+    console.log("function one is executed");
+    }
+    function two()
+    {
+    console.log("function two is executed");
+        
+    }
+    function three()
+    {
+        var xhttp = new XMLHttpRequest();
+        xhttp.open('get','');
+        xhttp.send();
+       
+        xhttp.onreadystatechange = function()
+        {
+            if (this.readyState == 4 && this.status == 200)
+            {
+                
+                for(i=0;i<=10000;i++)
+                 {
+                    for(j=0;j<=100000;j++)
+                     {
+                        var k = i*j;
+                        }
+                }
+                console.log("function three is executed");
+
+            }
+        }
+       
+        }
+    
+    function four()
+    {
+    console.log("function four is executed");
+        
+    }
+    function five()
+    {
+        console.log("function five is executed")
+    }
+    function six()
+    {
+        console.log("function six is executed")
+        
+    }
+
+
+    </script>
+</body>
+</html>

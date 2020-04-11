@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width:100%;}
+        button{
+            padding:10px;
+            font-size: 25px;
+        }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h1>Function Chaining</h1>
+  <div class="row">
+    <div id="parent_1">
+        <h2>This is inside parent_1</h2>
+        <h2>This is inside parent_1</h2>
+        <h2>This is inside parent_1</h2>
+        <div class="child">
+            <h2>This is inside child</h2>
+        <h2>This is inside parent_1</h2>
+        <h2>This is inside parent_1</h2>
+
+            <div class="innerchild">
+                <h2>This is inside innerchild</h2>
+                <img src="https://tillallarefun.files.wordpress.com/2014/02/transformers-prime-the-animated-series-transformers-prime-20162266-1920-1080.jpg" alt="">
+                <button>CLICK ME</button>
+                <img src="https://tillallarefun.files.wordpress.com/2014/02/transformers-prime-the-animated-series-transformers-prime-20162266-1920-1080.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+   <hr>
+    <div id="parent_2">
+        <h2>This is inside parent_2</h2>
+        <div class="child">
+            <h2>This is inside child</h2>
+            <div class="innerchild">
+                <h2>This is inside innerchild</h2>
+                <img src="https://tillallarefun.files.wordpress.com/2014/02/transformers-prime-the-animated-series-transformers-prime-20162266-1920-1080.jpg" alt="">
+                <button>CLICK ME</button>
+                <img src="https://tillallarefun.files.wordpress.com/2014/02/transformers-prime-the-animated-series-transformers-prime-20162266-1920-1080.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
+  </div>
+    
+    <script>
+
+        $("button").click(function()
+        {
+            // $(this).siblings().hide(1000);
+        //    var array =  $(this).siblings();
+        // $(this).siblings("img").hide(1000);
+            // $(this).parent().hide(1000);
+            // $(this).parents().hide(1000);
+            // $(this).parentsUntil(".row").hide(1000);
+            $(this).parentsUntil(".row").siblings().hide(1000);//->doubt
+            console.log($(this).parentsUntil(".row"));
+            console.log($(this).parentsUntil(".row").siblings());
+            
+            // $(this).parents(".row").find("#parent_2").hide(2000);
+            // $(this).parents(".row").find("#parent_2 img").hide(2000);
+
+
+
+
+        })
+    </script>
+
+
+</body>
+</html>
