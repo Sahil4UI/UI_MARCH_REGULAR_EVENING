@@ -9,7 +9,7 @@ var songs = [
         "song_id":2,
         "song_name":"APPROACH",
         "song_url":"Assets/music/Approach - Sidhu Moose Wala (DjPunjab.Com).mp3",
-        "song_thumb":"https://lh3.googleusercontent.com/proxy/tpY4xyve61E0iKF1q-2-cys8FWfyDOdKZMyAX1xh3WLeGtdq5bxaZGAO3hN3J2rn4-g4cbzt-LB6T0UmPRwjUQZnWkfojJrPM9et4_C7nYodgihShW0GQn3YEs00UkNBXubW47hdSKwxPg"
+        "song_thumb":"https://lyricsraag.com/wp-content/uploads/2020/04/APPROACH-Full-Song-Sidhu-Moose-Wala-lyrics.jpg"
     },
     {
         "song_id":3,
@@ -27,7 +27,7 @@ var songs = [
         "song_id":5,
         "song_name":"Dismiss 141",
         "song_url":"Assets/music/Dismiss 141 - Korala Maan (DjPunjab.Com).mp3",
-        "song_thumb":"https://lh3.googleusercontent.com/proxy/dpu1bHjGc3jUDTNKu_cu4Qr7-qpVSpdnwIkZ-VfB3cy1xYVZHFcFJkS1hxoSiZ9s4SN8Q6bzqLT0_BlVGcGBFPgMu0n59H1_TjjVgoc23X41fqN3zkoYnQLEQ3d63yHzr6YEB93lJyE"
+        "song_thumb":"https://www.lyricsbell.com/wp-content/uploads/2020/04/dismiss-141-korala-maan.jpg"
     }
 ,
 {
