@@ -26,6 +26,12 @@ a:hover{
 img,span{
     pointer-events: none;
 }
+#slider{
+    width:70%;
+}
+.range span{
+    margin:0px 5px;
+}
 
 #playList li{
 padding:5px;

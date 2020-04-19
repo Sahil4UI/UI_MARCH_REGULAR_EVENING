@@ -4,7 +4,7 @@ var flag = false;
 function initEvents()
 {
     audio = document.querySelector("#audio");
-  
+    rangebtn = document.querySelector(".rangeselector");
     playBtn = document.querySelector("#play");
     playBtn.addEventListener("click",togglePlay);
     slider = document.querySelector("#slider");
@@ -12,6 +12,9 @@ function initEvents()
     song_total_time = document.querySelector(".song_total_time");
 
     song_curr_time = document.querySelector(".song_curr_time");
+    prevBtn = document.querySelector("#prev");
+    nextBtn = document.querySelector('#next');
+    // nextBtn.addEventListener("click",playNextSong);
     loadSongs();
     loadPlayList();
 }
@@ -63,8 +66,11 @@ function playSong()
 
     setInterval(
         function()
-        {
-            slider.value = audio.currentTime;
+        {   
+            var duration = audio.duration;
+            rangebtn.style.left = audio.currentTime/duration*100+"%";
+            rangetrack  = document.querySelector(".rangeinner");
+            rangetrack.style.width = audio.currentTime/duration*100+"%";
             cduration = audio.currentTime;
             var cmin = parseInt(cduration/60);
             var csec = parseInt(cduration%60);

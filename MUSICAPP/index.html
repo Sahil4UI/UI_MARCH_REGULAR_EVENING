@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="Assets/BT/css/bootstrap.min.css">
      <!-- stylesheet linking -->
     <link rel="stylesheet" href="Assets/StyleSheets/main.css">
-   
-
+    <link rel="stylesheet" href="Assets/StyleSheets/rangeslider.css">
 </head>
 <body>
     <div id="container">
@@ -63,10 +62,15 @@
               <button id="next" class="btn btn-danger">
                 <i class="fas fa-step-forward"></i>
               </button>
-              <span class="song_curr_time">00:00</span>
               <audio id="audio" src=""></audio>
-              <input type="range" value="0" id="slider">
-              <span class="song_total_time">00:00</span>
+
+              <div class="range">
+                <div class="row">
+                  <span class="song_curr_time">00:00</span>
+                <div id="slider"></div>
+                <span class="song_total_time">00:00</span>
+                </div>
+              </div>
             </div>
         </div>
         <div id="content">
@@ -109,12 +113,27 @@
      <script src="Assets/JS/songs.js"></script>
      <script src="Assets/JS/model.js"></script>
      <script src="Assets/JS/main.js"></script>
+     <script src="Assets/JS/rangeslider.js"></script>
 
      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
      <script src="Assets/BT/js/bootstrap.min.js"></script>
      <!-- font-awesome -->
      <script src="https://kit.fontawesome.com/cd00034d8b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    var onMove = function(e, percentage) {
+      $(".opacity-box").css("opacity", percentage/100);
+      $(".opacity-box").text((percentage).toFixed(0) + "%");
+    }
+    var range = new RangeSlider($("#slider"), {
+      percentage: 20,
+      onMove: onMove,
+      onDown: onMove,
+      pollLimit: 60
+    });
+   
+  </script>
  
 </body>
 </html>
